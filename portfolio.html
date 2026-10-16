@@ -1,77 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Julius - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Portfolio</h1>
-    <p>Projects I have worked on</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">About Me</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="portfolio.html" class="active">Portfolio</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section>
-      <h2>My Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <img src="images/personal-website.png" alt="Front page of the personal CV and portfolio website">
-          <h3>Personal CV and Portfolio</h3>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Julius Haaber Nielsen. Global Business and Technology student with experience in customer service, international teamwork and practical technology projects.">
+    <title>Projects | Julius Haaber Nielsen</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        >Julius Haaber Nielsen<span>Business &amp; Technology</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="index.html">About</a><a href="cv.html">Experience</a
+        ><a href="portfolio.html" aria-current="page">Projects</a
+        ><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-intro">
+        <p class="eyebrow">Selected work</p>
+        <h1>Ideas put<br>into practice.</h1>
+        <p class="lead">
+          A personal webshop project and four semester projects spanning
+          software, product development and business analysis.
+        </p>
+        <nav class="project-nav" aria-label="Project sections">
+          <a href="#sevilla">Sevilla Scents</a>
+          <a href="#university">Semester projects</a>
+        </nav>
+      </section>
+      <section id="sevilla" class="section">
+        <div class="project-heading">
+          <div>
+            <p class="eyebrow">Personal project &middot; Sevilla, Spain</p>
+            <h2>Sevilla Scents</h2>
+          </div>
+          <a class="primary-link" href="https://bpbphi-vc.myshopify.com/"
+            >Visit website &rarr;</a
+          >
+        </div>
+        <p class="project-description">
+          During my exchange in Sevilla, I developed a Shopify website
+          presenting perfumes, soaps and other products from the city. The
+          project combines visual design, product presentation and navigation
+          using Shopify and Visual Studio Code.
+        </p>
+        <p class="tools">Shopify &middot; Liquid &middot; HTML &middot; CSS</p>
+        <p class="access-note">
+          The shop may require an access code. Screenshots are available below.
+        </p>
+        <img
+            class="shop-preview storefront-image"
+            src="images/shopify-home-hd.png"
+            alt="Sevilla Scents homepage"
+            width="2550"
+            height="1320">
+        <details>
+          <summary>More screenshots</summary>
+          <div class="screenshot-grid">
+            <a href="images/shopify-story.png"
+              ><img
+                src="images/shopify-story.png"
+                alt="The story behind Sevilla Scents"
+                loading="lazy"></a
+            ><a href="images/shopify-perfumes.png"
+              ><img
+                src="images/shopify-perfumes.png"
+                alt="Perfume product collection"
+                loading="lazy"></a
+            ><a href="images/shopify-soaps.png"
+              ><img
+                src="images/shopify-soaps.png"
+                alt="Handmade soap product collection"
+                loading="lazy"></a>
+          </div>
+        </details>
+      </section>
+      <section id="university" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">University projects</p>
+          <h2>Different problems.<br>A shared practical approach.</h2>
           <p>
-            A personal website with information about me, my experience and my
-            projects. The website is responsive on mobile, tablet and desktop.
+            These projects were developed in groups during my studies at VIA.
           </p>
-          <p><strong>Technologies:</strong> HTML and CSS</p>
-          <a href="index.html">View project</a>
-        </article>
-
-        <article class="project-card">
-          <img src="images/css-zen-garden.png" alt="The CSS Zen Garden project">
-          <h3>CSS Zen Garden</h3>
-          <p>
-            A styling exercise where the appearance of an existing HTML page
-            was changed by editing only the CSS file.
-          </p>
-          <p><strong>Technologies:</strong> HTML and CSS</p>
-          <a href="https://juliushn1111.github.io/zen-garden/">View project</a>
-        </article>
-
-        <article class="project-card">
-          <img src="images/shopify-front-page-cropped.png" alt="Front page of the private Sevilla Scents Shopify website">
-          <h3>Private Shopify Website</h3>
-          <p>
-            A webshop for Sevilla Scents with product pages, navigation and a
-            visual design created in VS Code and Shopify.
-          </p>
-          <p><strong>Technologies:</strong> Shopify, Liquid, HTML and CSS</p>
-          <a href="https://bpbphi-vc.myshopify.com/">View project</a>
-        </article>
+        </div>
+        <div class="project-grid">
+          <article class="project">
+            <p class="eyebrow">Semester 01 &middot; Group project</p>
+            <h3>A game about plastic pollution</h3>
+            <p>
+              We developed a JavaScript computer game to raise awareness of
+              plastic pollution. The project explored how an environmental issue
+              could become an interactive experience.
+            </p>
+            <p class="tools">JavaScript &middot; Game development</p>
+          </article>
+          <article class="project">
+            <p class="eyebrow">Semester 02 &middot; Group project</p>
+            <h3>Elevator design &amp; prototyping</h3>
+            <p>
+              We developed an elevator project using CAD drawings and 3D
+              printing. Alongside the physical design, we used market and PESTEL
+              analysis to explore its business context.
+            </p>
+            <p class="tools">
+              CAD &middot; 3D printing &middot; Market analysis &middot; PESTEL
+            </p>
+          </article>
+          <article class="project">
+            <p class="eyebrow">Semester 03 &middot; Group project</p>
+            <h3>A daily overview for kindergarten staff</h3>
+            <p>
+              We developed a Java application to help substitute staff find
+              their way through daily routines. It brought together information
+              about allergies, weather and activities to support planning the
+              day.
+            </p>
+            <p class="tools">
+              Java &middot; UML &middot; Use cases &middot; User stories
+            </p>
+          </article>
+          <article class="project">
+            <p class="eyebrow">Semester 04 &middot; Group project</p>
+            <h3>Termonet &amp; heating cost optimisation</h3>
+            <p>
+              We explored a Termonet system for a Danish area without district
+              heating. Our client-server application supported different
+              operating modes and provided an overview of energy consumption and
+              costs, with a focus on price optimisation.
+            </p>
+            <p class="tools">
+              Java &middot; Client-server systems &middot; Domain modelling
+              &middot; UML
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div>
+        <strong>Let's get in touch.</strong>
+        <p>For opportunities, collaborations or a conversation.</p>
+        <a href="mailto:juliushn11@gmail.com">juliushn11@gmail.com</a>
       </div>
-    </section>
-
-    <section>
-      <h2>Shopify Project Screenshots</h2>
-      <div class="screenshot-grid">
-        <img src="images/shopify-front-page-cropped.png" alt="Sevilla Scents front page">
-        <img src="images/shopify-story.png" alt="Story section on the Sevilla Scents website">
-        <img src="images/shopify-perfumes.png" alt="Perfume collection on the Sevilla Scents website">
-        <img src="images/shopify-soaps.png" alt="Soap collection on the Sevilla Scents website">
+      <div>
+        <a href="tel:+4523354048">+45&nbsp;23&nbsp;35&nbsp;40&nbsp;48</a
+        ><a href="https://www.linkedin.com/in/julius-nielsen-566469253/"
+          >LinkedIn</a
+        ><span>Aarhus, Denmark</span>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Contact: 356291@viauc.dk</p>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
