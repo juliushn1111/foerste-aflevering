@@ -128,7 +128,10 @@ nav a[aria-current="page"] {
 }
 .portrait-space {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
   background: #eef1ef;
   border: 1px solid #e1e7e3;
 }
@@ -381,7 +384,7 @@ footer > div:last-child {
   }
   .portrait-space {
     max-width: 260px;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 5;
   }
   .section {
     padding: 40px 0;
